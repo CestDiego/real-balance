@@ -1,3 +1,7 @@
 * Real Balance
 
 This substracts the credit card balance from your checking account.:fireworks:
+
+
+Right now it only works with Bank of America and only if you have two accounts,
+a checking and a credit one.
