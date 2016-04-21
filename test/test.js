@@ -1,5 +1,5 @@
 import chai, { should } from 'chai'
-import { parseBalance, formatMoney } from './helper_functions'
+import { parseBalance, formatMoney } from '../src/helper_functions'
 
 const assert = chai.assert;
 
