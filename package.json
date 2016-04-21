@@ -1,0 +1,27 @@
+{
+  "name": "real-balance",
+  "version": "1.0.0",
+  "description": "Shows you the real balance",
+  "main": "script.js",
+  "devDependencies": {
+    "babel": "^6.5.2",
+    "babel-core": "^6.7.7",
+    "babel-loader": "^6.2.4",
+    "chai": "^3.5.0",
+    "mocha": "^2.4.5",
+    "webpack": "^1.13.0"
+  },
+  "scripts": {
+    "test": "./node_modules/.bin/mocha test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/CestDiego/real-balance.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/CestDiego/real-balance/issues"
+  },
+  "homepage": "https://github.com/CestDiego/real-balance"
+}
