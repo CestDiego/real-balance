@@ -1,5 +1,5 @@
-Number.prototype.formatMoney = function(c, d, t){
-  var n = this,
+formatMoney = function(number, c, d, t){
+  var n = number,
       c = isNaN(c = Math.abs(c)) ? 2 : c,
       d = d == undefined ? "." : d,
       t = t == undefined ? "," : t,
@@ -25,7 +25,7 @@ checkingElement.style.setProperty('text-decoration', 'line-through');
 newCheckingBalance = parseBalance(checkingElement) - parseBalance(creditElement)
 
 var newCheckingElement = document.createElement('span')
-newCheckingElement.appendChild(document.createTextNode('$' + newCheckingBalance.formatMoney(2)));
+newCheckingElement.appendChild(document.createTextNode('$' + formatMoney(newCheckingBalance, 2)));
 newCheckingElement.style.setProperty('padding-right', '5px')
 
 var checkingParent = checkingElement.parentNode;
