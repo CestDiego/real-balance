@@ -10,7 +10,9 @@ Number.prototype.formatMoney = function(c, d, t){
 };
 
 var parseBalance = function (element) {
-  return parseFloat(element.innerHTML.slice(1).split(',').join(''))
+  balanceString = element.innerHTML
+  // will strip string and only return numbers, dot, or minus sign contained
+  return parseFloat(balanceString.replace(/[^\d.-]/g, ''))
 }
 
 var balances = document.getElementsByClassName('balanceValue')
