@@ -1,6 +1,6 @@
 module.exports = {
   entry: {
-    javascript: "./script.js"
+    javascript: "./src/script.js"
   },
 
   output: {
@@ -20,6 +20,7 @@ module.exports = {
   resolve: {
     modulesDirectories: [
       'node_modules',
+      'src'
     ],
     extensions: ['.js', '']
   }
