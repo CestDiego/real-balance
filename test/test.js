@@ -13,4 +13,24 @@ describe('Parsing Balance: ', function () {
                        parseBalance(euroTestBalance),
                        "Not equal")
   });
+
+  it('Should not care about whitespace', function () {
+
+    var testBalance1 = "$     4,232.32"
+    var testBalance2 = "  $  4,232.32"
+    assert.strictEqual(parseBalance(testBalance1),
+                       parseBalance(testBalance2),
+                       "Not equal")
+  });
+
+
+  it('Should not care about whitespace', function () {
+
+    var testBalance1 = "$     4,232.32"
+    var testBalance2 = "  $  4,232.32"
+    assert.strictEqual(parseBalance(testBalance1),
+                       parseBalance(testBalance2),
+                       "Not equal")
+  });
+
 });
